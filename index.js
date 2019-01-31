@@ -6,9 +6,12 @@ let contacts = []
 const addressBook = {
   displayContacts: () => {
     contacts.forEach(contact => {
-      console.log(
-        `${contact.id}: ${contact.name} (${contact.phone}) <${contact.email}>`
-      )
+      const contactString = `${contact.id}: ${contact.name} (${
+        contact.phone
+      }) <${contact.email}>`
+
+      console.log(contactString)
+      document.write(contactString)
     })
   },
 
